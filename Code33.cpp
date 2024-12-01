@@ -13,6 +13,7 @@ int main(){
     for(int j=0;j<num;j++){
         cout<<arr[j]<<" ";
     }
+    cout<<"This is an array"
     return 0;
 
 }
