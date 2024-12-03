@@ -16,7 +16,7 @@ int main(){
            cout<<" ";
         }
             for(int k=0;k<n-i;k++){
-                cout<<i;
+                cout<<i<<" ";
             }
             cout<<endl;
         }
