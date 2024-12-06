@@ -17,8 +17,8 @@ void binocoeff(int n,int r){
     for(int i=n-r;i>=1;i--){
         nrfact*=i;
     }
-    binocoef=nfact/(rfact)*(nrfact);
-    cout<<binocoef;
+    binocoef=nfact/(rfact*nrfact);
+    cout<<binocoef<<endl;
 }
 int main(){
     int n=8;
