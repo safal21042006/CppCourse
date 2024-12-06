@@ -7,7 +7,7 @@ int main(){
     int sum=0;
     int decnumber=50;
     int rem;
-    int pow=1;
+    int pow=1;//10^0
     while(decnumber>0){
         rem=decnumber%2;
         decnumber=decnumber/2;
