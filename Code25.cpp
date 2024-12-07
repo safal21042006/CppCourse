@@ -1,17 +1,20 @@
 // PRIME NUMBER OR NOT
 #include<iostream>
 using namespace std;
-int main(){
-    int n;
-    cin>>n;
-    for(int i=2;i<=n-1;i++){
-        if(n%i == 0){
-            cout<<"NOT A PRIME NUMBER";
-        break;
-        }else{
-            cout<<"PRIME NUMBER";
-            break;
+void prime(int n){
+    if(n<=1){
+        cout<<"NOT A PRIME NUMBER:"<<endl;
+    }
+    for(int i=2;i*i<=n;i++){
+        if(n%i==0){
+            cout<<n<<" NOT A PRIME NUMBER"<<endl;
+            return ;
         }
     }
+    cout<<n<<" PRIME NUMBER"<<endl;
+    return;
+}
+int main(){
+    prime(7);
     return 0;
 }
