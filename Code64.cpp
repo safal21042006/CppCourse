@@ -1,4 +1,4 @@
-#include<iostream> // FINDING THE MAX VALUE
+#include<iostream> // FINDING THE MIN VALUE
 #include<climits>
 using namespace std;
 int main(){
