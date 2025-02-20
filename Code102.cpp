@@ -4,6 +4,7 @@ destribute in contiguous and all students have a book
 */
 
 #include<iostream>
+#include<algorithm>
 #include<vector>
 using namespace std;
 // CODE FOR CALCULATE VALUE IS VALID OR NOT
@@ -33,7 +34,7 @@ int allocatebooks(vector<int>&arr,int n,int m){ // TIME COMPLEXICITY:O(logN * n)
         sum+=arr[i];
     }
     int ans=-1; // -1 DOES'T IMPACT ON ANSWER -1REPLACE HO JAYEGA ISLIYA KOI FARAK NHI PADEGA;
-    int st=0,end=sum ; // RANGE  {range=N}
+    int st=*max_element(arr.begin(),arr.end()),end=sum ; // RANGE  {range=N}
     if(m>n){
         return -1;
     }

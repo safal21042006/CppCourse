@@ -1,6 +1,7 @@
 // REVISION OF PREVIOUS QUESTION
 #include<iostream>
 #include<vector>
+#include<algorithm>
 using namespace std;
 bool isvalid(vector<int>&arr,int n,int m,int MaxAllowedPages){
     int student=1,pages=0;
@@ -21,7 +22,7 @@ int bookallocated(vector<int>&arr,int n,int m){
     for(int i=0;i<n;i++){
         sum+=arr[i];
     }
-    int st=0,end=sum;
+    int st=*max_element(arr.begin(),arr.end()),end=sum;
     int ans=0; 
     if(m>n){
         return false;
