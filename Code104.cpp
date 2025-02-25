@@ -1,6 +1,7 @@
 // Painter Partition Problem
 // DSA - VIDEO 22
 // SAME AS BOOK ALLOCATED PROBLEM
+//TIME COMPLEXICITY=O(log(sum)*n)
 
 #include<iostream>
 #include<vector>
